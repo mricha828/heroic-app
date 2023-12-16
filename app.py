@@ -33,5 +33,4 @@ def predict():
     return render_template('index.html',Accuracy=" Acuracy for iris dataset should be {} ".format(accuracy))
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
     app.run(port=5000,debug=True)
