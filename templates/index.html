@@ -3,7 +3,11 @@
     <h1>Hello World</h1>
     <body>
         <div>
-            <p>{{Accuracy}}</p>
+            <h1> Get Accuracy</h1>
+            <form action="{{url_for('predict')}}" method="post">
+                <button type="submit" >Click Me</button>
+            </form>
+            {{Accuracy}}
         </div>
     </body>
    
